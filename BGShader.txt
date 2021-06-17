@@ -1,0 +1,27 @@
+uniform float time;
+uniform vec2 mouse;
+uniform vec2 resolution;
+
+const float const_cell_size = 0.1;
+
+void main(void)
+{
+	float time0 = time * 2.0;
+	float time1 = time * 0.5;
+	
+	vec2 cell_size = vec2(const_cell_size, const_cell_size * resolution.x / resolution.y);
+	vec3 light_color = vec3(abs(cos(time1) * 0.5), abs(sin(time1) * 0.5), 0.0);
+	
+	
+	vec3 surface = vec3((gl_FragCoord.xy / resolution - 0.5) * 8.0, 0.0);
+	vec3 light_position = vec3(cos(time0) * 2.0, sin(time0) * 2.0, 2.0);
+	vec3 normal = normalize(vec3(mod(surface.x, cell_size.x) - cell_size.y * 0.5, mod(surface.y, cell_size.y) - cell_size.y * 0.5, 1.0));
+	
+	vec3 light_dir = normalize(light_position - surface);
+	
+	vec3 diffuse = light_color * max(dot(light_dir, normal), 0.0);
+	vec3 specular = light_color * pow(max(dot(normalize(light_dir + -surface), normal), 0.0), 16.0);
+	vec3 color = diffuse + specular;
+	
+	gl_FragColor = vec4(color, 1.0);
+}

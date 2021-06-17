@@ -1,0 +1,204 @@
+resources:
+   - file: .\resources\images\UI\main_bg.png
+     ID: SplashBG
+   - file: .\resources\images\UI\main_bg.png
+     ID: MenuBG
+   - file: .\resources\images\UI\endScreen.png
+     ID: endBG
+   - file: .\resources\images\UI\box_texture.png
+     ID: BoxTexture
+   - file: .\resources\images\UI\button_bg.png
+     ID: ButtonBG
+   - file: .\resources\images\UI\settings_font.png
+     ID: Settings
+   - file: .\resources\images\UI\new_game_text.png
+     ID: New_Game
+   - file: .\resources\images\UI\load_game_text.png
+     ID: Load_Game
+   - file: .\resources\images\UI\exit_text.png
+     ID: Exit
+   - file: .\resources\images\Character\character.png
+     ID: character
+   - file: .\resources\images\level\lever_a.png
+     ID: inactive_lever
+   - file: .\resources\images\level\lever_b.png
+     ID: active_lever
+   - file: .\resources\images\level\platform.png
+     ID: Platform
+   - file: .\resources\images\level\platform90.png
+     ID: Platform90
+   - file: .\resources\images\level\doorOpen.png
+     ID: openDoor
+   - file: .\resources\images\level\doorClosed.png
+     ID: closedDoor
+   - file: .\resources\images\level\particle.png
+     ID: Particle
+   - file: .\resources\images\Character\sprite_sheet_left.png
+     ID: SpriteSheetLeft
+   - file: .\resources\images\Character\sprite_sheet_right.png
+     ID: SpriteSheetRight
+   - file: .\resources\images\Character\sprite_sheet.png
+     ID: SpriteSheet
+   - file: .\resources\images\Character\character1.png
+     ID: character1
+   - file: .\resources\images\Character\character2.png
+     ID: character2
+   - file: .\resources\images\Character\character3.png
+     ID: character3
+   - file: .\resources\images\Character\character4.png
+     ID: character4
+   - file: .\resources\images\Character\character5.png
+     ID: character5
+   - file: .\resources\images\Character\character6.png
+     ID: character6
+   - file: .\resources\images\Character\character7.png
+     ID: character7
+   - file: .\resources\images\level\Onplate.png
+     ID: onPlate
+   - file: .\resources\images\level\Offplate.png
+     ID: offPlate
+   - file: .\resources\images\level\jumpPad.png
+     ID: JumpPad
+   - file: .\resources\images\level\grapplingHook.png
+     ID: hook
+   - file: .\resources\images\level\grapplingHook.png
+     ID: target
+   - file: .\resources\images\level\arrow.png
+     ID: arrow
+
+player:
+   - position: {x: 100, y: 900}
+   - position: {x: 100, y: 900}
+   - position: {x: 100, y: 900}
+   - position: {x: 100, y: 900}
+   - position: {x: 100, y: 900}
+   - position: {x: 200, y: 100}
+
+door:
+   - position: {x: 1720, y: 930}
+   - position: {x: 1720, y: 930}
+   - position: {x: 500, y: 930}
+   - position: {x: 1720, y: 930}
+   - position: {x: 300, y: 930}
+   - position: {x: 300, y: 930}
+
+jumpPad:
+   - position: {x: -100, y: -100}
+     direction: {x: 0, y: 0}
+   - position: {x: -100, y: -100}
+     direction: {x: 0, y: 0}
+   - position: {x: -100, y: -100}
+     direction: {x: 0, y: 0}
+   - position: {x: 1200, y: 1070}
+     direction: {x: -0.15, y: -0.45}
+   - position: {x: 750, y: 1070}
+     direction: {x: 0, y: -0.35}
+   - position: {x: 760, y: 300}
+     direction: {x: 0.18, y: -0.35}
+   - position: {x: -100, y: -100}
+     direction: {x: 0.18, y: -0.35}
+
+pressurePlate:
+   - position: {x: -100, y: -100}
+   - position: {x: -100, y: -100}
+   - position: {x: -100, y: -100}
+   - position: {x: 200, y: 200}
+   - position: {x: 1720, y: 200}
+   - position: {x: -100, y: -100}
+
+lever:
+   - position: {x: 100, y: 372}
+   - position: {x: 1200, y: 372}
+   - position: {x: 1800, y: 470}
+   - position: {x: 3000, y: 935}
+   - position: {x: 3000, y: 935}
+   - position: {x: 1800, y: 270}
+
+npc:
+   - position: {x: 500, y: 900}
+   - position: {x: 100, y: 330}
+   - position: {x: 1800, y: 900}
+   - position: {x: 300, y: 900}
+   - position: {x: 1500, y: 900}
+   - position: {x: 1600, y: 900}
+
+grapplingHook:
+   - position: {x: 1300, y: 1070}
+
+platforms:
+   - position: {x: 1600, y: 800}
+     rotation: 0
+   - position: {x: 1600, y: 800}
+     rotation: 90
+   - position: {x: 0, y: 500}
+     rotation: 0
+   - position: {x: 400, y: 500}
+     rotation: 0
+   - position: {x: 700, y: 500}
+     rotation: 0
+   - position: {x: 1100, y: 500}
+     rotation: 0
+   - position: {x: 1600, y: 800}
+     rotation: 0
+   - position: {x: 1600, y: 800}
+     rotation: 90
+   - position: {x: 0, y: 500}
+     rotation: 0
+   - position: {x: 400, y: 500}
+     rotation: 0
+   - position: {x: 700, y: 500}
+     rotation: 0
+   - position: {x: 1100, y: 500}
+     rotation: 0
+   - position: {x: 1500, y: 150}
+     rotation: 90
+   - position: {x: 1500, y: -250}
+     rotation: 90
+   - position: {x: 400, y: 800}
+     rotation: 0
+   - position: {x: 400, y: 800}
+     rotation: 90
+   - position: {x: 800, y: 800}
+     rotation: 90
+   - position: {x: 1700, y: 600}
+     rotation: 0
+   - position: {x: 1500, y: 200}
+     rotation: 90
+   - position: {x: 1500, y: 600}
+     rotation: 90
+   - position: {x: 1500, y: -200}
+     rotation: 90
+   - position: {x: 1500, y: 1000}
+     rotation: 90
+   - position: {x: 1700, y: 200}
+     rotation: 90
+   - position: {x: 200, y: 200}
+     rotation: 0
+   - position: {x: 1680, y: 200}
+     rotation: 0
+   - position: {x: 700, y: 200}
+     rotation: 90
+   - position: {x: 700, y: 600}
+     rotation: 90
+   - position: {x: 700, y: -200}
+     rotation: 90
+   - position: {x: 700, y: 1000}
+     rotation: 90
+   - position: {x: 0, y: 300}
+     rotation: 0
+   - position: {x: 400, y: 300}
+     rotation: 0
+   - position: {x: 800, y: 300}
+     rotation: 90
+   - position: {x: 800, y: 700}
+     rotation: 0
+   - position: {x: 1200, y: 200}
+     rotation: 90
+   - position: {x: 1200, y: 600}
+     rotation: 90
+   - position: {x: 1200, y: -200}
+     rotation: 90
+   - position: {x: 1200, y: 1000}
+     rotation: 90
+   - position: {x: 1700, y: 400}
+     rotation: 0
